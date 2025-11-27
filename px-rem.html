@@ -1,12 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PX -> REM Convertor</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <header>
+        <h1>Px ↔ Rem Converter</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="bmi.html">BMI</a>
+            <a href="px-rem.html">Px ↔ Rem</a>
+            <a href="temp.html">Temperature</a>
+        </nav>
+    </header>
+
+    <main class="main-container">
+        <h2>Convert Pixels and Rem</h2>
+
+        <form id="pxRemForm">
+            <div class="form-group">
+                <label for="baseFont">Base Font Size (px)</label>
+                <input type="number" id="baseFont" value="16" min="1" />
+            </div>
+
+            <div class="form-group">
+                <label for="pxValue">Pixels (px)</label>
+                <input type="number" id="pxValue" />
+            </div>
+
+            <div class="form-group">
+                <label for="remValue">Rem</label>
+                <input type="number" step="0.01" id="remValue" />
+            </div>
+
+            <button type="button" id="pxToRem">Px → Rem</button>
+            <button type="button" id="remToPx">Rem → Px</button>
+            <button type="reset" id="clearBtn">Clear</button>
+        </form>
+
+        <div id="pxRemResult" class="result-box" style="display:none;"></div>
+    </main>
+
+    <footer>© 2025 Unit Calculator Demo</footer>
+
+    <script src="js/px-rem.js"></script>
 </body>
+
 </html>
