@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <h1>Temperature Converter</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="bmi.html">BMI</a>
+            <a href="px-rem.html">Px -> Rem</a>
+            <a href="temp.html">Temperature</a>
+        </nav>
+    </header>
+
+    <main class="main-container">
+        <h2>Celsius ↔ Fahrenheit</h2>
+
+        <form id="tempForm">
+            <div class="form-group">
+                <label for="celsius">Celsius (°C)</label>
+                <input type="number" id="celsius" />
+            </div>
+
+            <div class="form-group">
+                <label for="fahrenheit">Fahrenheit (°F)</label>
+                <input type="number" id="fahrenheit" />
+            </div>
+
+            <button type="button" id="cToF">°C → °F</button>
+            <button type="button" id="fToC">°F → °C</button>
+            <button type="reset" id="clearBtn">Clear</button>
+        </form>
+
+        <div id="tempResult" class="result-box" style="display:none;"></div>
+    </main>
+
+    <footer>Made with ❤️ by Melove Gupta</footer>
+
+    <script src="js/temp.js"></script>
+</body>
+</html>
